@@ -2,7 +2,7 @@
 
 A Python tool to analyze and summarize chat logs from `.txt` files using NLP techniques. Extracts key topics, message statistics, and generates summaries.
 
-![Sample Output](assets/sample_output.png) *(Example: Replace with your screenshot)*
+
 
 ## Features
 - Parse single or multiple chat log files
@@ -42,15 +42,16 @@ python ai_chat_summarize_for_single_txt_file.py
 
 **Output Example**:
 ```text
-Total messages: 42
-User messages: 21
-AI messages: 21
+Total messages: 4
+User messages: 2
+AI messages: 2
 
-Summary
-- The conversation had 18 exchanges
-- The user asked mainly about python and installation
-- Most common keywords: python, install, error, version, package
+ Summary
+ - The conversation had 15 exchanges
+ - The user asked mainly about python and use
+ - Most common keywords: python, use, hi, tell, sure
 ```
+![for_single_file](assets\for_single_file.png) 
 
 ### 2. For Multiple Chat Files
 ```bash
@@ -59,31 +60,30 @@ python ai_chat_summarize_to_parse_all_txt_and_analysis.py
 
 **Output Example**:
 ```text
-Total messages: 127
-User messages: 64
-AI messages: 63
+Total messages: 8
+User messages: 4
+AI messages: 4
 
 Summary
-The conversation had 45 exchanges
-The user asked mainly about api and debugging
-Most common keywords: api, debug, error, response, timeout
+The conversation had 26 exchanges
+The user asked mainly about python and ai
+Most common keywords: python, ai, data, hi, learn
 ```
+![mltiple_txt_parse](assets\mltiple_txt_parse.png) 
 
 ### 3. Jupyter Notebook Option
 ```bash
 jupyter notebook AI_Chat_Log_Summarizer_multiple_txt_parse.ipynb
 ```
+![for_ipynb](assets\for_ipynb.png) 
 
 ## Adding Screenshots
 1. Create an `assets/` folder:
    ```bash
    mkdir assets
    ```
-2. Save your screenshot (e.g., `sample_output.png`) in this folder
-3. Reference it in markdown:
-   ```markdown
-   ![Sample Output](assets/sample_output.png)
-   ```
+2. Save screenshot (e.g., `sample_output.png`) in this folder
+
 
 ## Project Structure
 ```
@@ -110,12 +110,12 @@ jupyter notebook AI_Chat_Log_Summarizer_multiple_txt_parse.ipynb
 ## Troubleshooting
 - If you get NLTK errors, re-run:
   ```bash
-  python -m nltk.downloader stopwords wordnet punkt
+  python
+  >>> import nltk
+  >>> nltk.download('stopwords') 
+  and so on (necessary libraries)
   ```
 - For virtual environment issues:
   ```bash
-  deactivate && rm -rf venv/ && python -m venv venv
+  deactivate
   ```
-
-## License
-MIT
