@@ -51,7 +51,7 @@ AI messages: 2
  - The user asked mainly about python and use
  - Most common keywords: python, use, hi, tell, sure
 ```
-[for_single_file](assets/for_single_file.png) 
+![for_single_file](assets/for_single_file.png) 
 
 ### 2. For Multiple Chat Files
 ```bash
@@ -75,7 +75,7 @@ Most common keywords: python, ai, data, hi, learn
 ```bash
 jupyter notebook AI_Chat_Log_Summarizer_multiple_txt_parse.ipynb
 ```
-[for_ipynb](assets/for_ipynb.png) 
+![for_ipynb](assets/for_ipynb.png) 
 
 ## Adding Screenshots
 1. Create an `assets/` folder:
